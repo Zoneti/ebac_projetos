@@ -2,71 +2,124 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC Shoes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tarefa Módulo 13</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>EBAC Shoes</h1>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="#">Sobre a loja</a>
-                    </li>
-                    <li>
-                        <a href="#">Produtos</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <div class="container">
-        <main>
-            <section class="sobre">
-                <img src="img/sobre_loja.jpg" />
-                <div>
-                    <h2>Sobre a Loja</h2>
-                    <hr/>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident est architecto dicta modi unde commodi libero perferendis eos maiores quo corporis, beatae qui mollitia quos cupiditate sed omnis deserunt at?</p>
+        <div id="carousel-head" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/08/06/12/24/train-2592037_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2 class="legend">Foto de um trem na Escócia</h2>
+                    </div>
                 </div>
-            </section>
-            <section>
-                <h2>Produtos</h2>
-                <hr/>
-                <div class="produtos">
-                    <article class="produto">
-                        <img src="img/tenis_1.jpg" />
-                        <h3>Produto 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <button type="button">Adicionar ao carrinho</button>
-                    </article>
-                    <article class="produto">
-                        <img src="img/tenis_2.jpg" />
-                        <h3>Produto 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <button type="button">Adicionar ao carrinho</button>
-                    </article>
-                    <article class="produto">
-                        <img src="img/tenis_3.jpg" />
-                        <h3>Produto 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <button type="button">Adicionar ao carrinho</button>
-                    </article>
-                    <article class="produto">
-                        <img src="img/tenis_4.jpg" />
-                        <h3>Produto 4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <button type="button">Adicionar ao carrinho</button>
-                    </article>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/05/15/16/32/trinity-college-library-5174182_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2 class="legend">Foto da Biblioteca Trinity College</h2>
+                    </div>
                 </div>
-            </section>
-        </main>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/05/17/05/10/universal-studios-3407863_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2 class="legend">Foto de Hogsmeade</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/11/20/08/03/castle-3826771_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2 class="legend">Foto de Hogwarts</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-head" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-head" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-head" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-head" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-head" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-head" data-bs-slide-to="3"></button>
+            </div>
+        </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2014/09/17/21/13/snowy-owl-449986_1280.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card 1</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card 1</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2017/05/05/12/26/cathedral-2286910_1280.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card 2</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card 2</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/19/12/29/train-2658356_1280.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card 3</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card 3</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2018/02/23/19/58/one-3176454_1280.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card 4</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card 4</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2023/06/06/07/31/train-8044059_1280.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card 5</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card 5</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
