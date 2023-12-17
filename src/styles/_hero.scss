@@ -1,0 +1,31 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/hero_background.jpg);
+    text-align: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -55px;
+    }
+
+    &__content {
+        width: 100%;
+        background-color: variaveis.$corDeFundoHero;
+
+        .title--small {
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+    }
+}

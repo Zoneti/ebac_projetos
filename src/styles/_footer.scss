@@ -1,0 +1,22 @@
+@use 'variaveis';
+
+.footer {
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__logo {
+        width: 30%;
+        min-width: 100px;
+        margin: 0 auto;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+}

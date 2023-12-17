@@ -35,12 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function ocultaElementosDoHeader() {
     const header = document.querySelector('header');
-    header.classList.add('header--is-hidden');
+    header.classList.add('header-is-hidden'); 
 }
 
 function exibeElementosDoHeader() {
     const header = document.querySelector('header');
-    
     header.classList.remove('header--is-hidden');
 }
 
@@ -63,6 +62,6 @@ function escondeTodasAbas() {
     const tabsContainer = document.querySelectorAll('[data-tab-id]');
 
     for (let i = 0; i < tabsContainer.length; i++) {
-        tabsContainer[i].classList.remove('shows__list--is-active'); 
+        tabsContainer[i].classList.remove('shows__list--is-active');
     }
 }
