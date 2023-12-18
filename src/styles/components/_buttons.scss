@@ -10,7 +10,7 @@
 
     &--primary{
         color: variables.$textColor;
-        background-color: variables.$purple;
+        background-color: variables.$buttonColor;
     }
 
     @media (max-width: 640px){
