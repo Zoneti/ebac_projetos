@@ -1,31 +1,54 @@
-@use 'variaveis';
+@use 'variables';
 
 .hero {
-    padding: 5.6vw;
-    min-height: 80vh;
-    background-image: url(../images/hero_background.jpg);
-    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    @media (max-width: 768px) {
-        padding-top: calc(50vw + 25px);
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: -55px;
+    .container{
+        position: relative;
     }
 
-    &__content {
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        background-color: variaveis.$corDeFundoHero;
+        height: 100%;
+        background-color: variables.$secundaryTextColor;
+        content: '';
+        opacity: .7;
+    }
 
-        .title--small {
-            margin-bottom: 30px;
-            margin-top: 30px;
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        height: 80px;
+        display: block;
+    }
+
+    @media (max-width: 640px){
+        padding: 40px 0;
+
+        &__logo{
+            height: 40px;
+        }
+
+        &__text{
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
         }
     }
 }
