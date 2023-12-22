@@ -1,18 +1,19 @@
 {
-  "name": "aula",
-  "version": "1.0.0",
-  "description": "",
+  "name": "tarefa",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
-    "build": "parcel build src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "vue": "^3.3.11"
+  },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.3",
-    "parcel": "^2.10.3",
-    "sharp": "^0.31.3"
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.10"
   }
 }
